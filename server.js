@@ -8,6 +8,6 @@ app.get("/search", async function(req, res, next) {
   res.json(result);
  });
  
-app.listen(3000, async function() {
- console.log("Server running on port 3000");
+app.listen(process.env.PORT || 5000, async function() {
+ console.log("Server running");
 });
